@@ -1,6 +1,7 @@
-let count = 0;
+let playerCount = 0;
 const scores = ["Paper", "Rock", "Scissor"];
 const scoreGame = document.querySelector("#score")
+const cpuPoints = document.querySelector("#cpu-score")
 const playerChoice = document.querySelector("#player-choice")
 const cpuChoice = document.querySelector("#cpu-choice")
 const result = document.querySelector("#result")
@@ -21,8 +22,8 @@ paperBtn.addEventListener("click", function(){
     }
     if (randomScore == scores.at(1)){
         result.innerText = "You win!"
-        count++;
-        scoreGame.innerText = `Your Score: ${count}`
+        playerCount++;
+        scoreGame.innerText = `Your Score: ${playerCount}`
     }
     if (randomScore == scores.at(2)){
         result.innerText = "You Lose!"
@@ -35,8 +36,8 @@ scissorBtn.addEventListener("click", function(){
     cpuChoice.innerText = `Computer's choice: ${randomScore}`
      if (randomScore == scores.at(0)){
         result.innerText = "You Win!"
-        count++;
-        scoreGame.innerText = `Your Score: ${count}`
+        playerCount++;
+        scoreGame.innerText = `Your Score: ${playerCount}`
     }
     if (randomScore == scores.at(1)){
         result.innerText = "You Lose!"
@@ -58,8 +59,8 @@ rockBtn.addEventListener("click", function(){
     }
     if (randomScore == scores.at(2)){
         result.innerText = "You win!"
-        count++;
-        scoreGame.innerText = `Your Score: ${count}`
+        playerCount++;
+        scoreGame.innerText = `Your Score: ${playerCount}`
     }
 })
 
@@ -72,6 +73,7 @@ newGameBtn.addEventListener("click", function(){
     playerChoice.innerText = "Your choice: Rock"
     cpuChoice.innerText = "Computer's choice: Paper"
     result.innerText = "Winner: Computer"
+    count = 0;
 })
 
 
