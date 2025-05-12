@@ -8,6 +8,8 @@ const rockBtn = document.querySelector("#rock-btn")
 const paperBtn = document.querySelector("#paper-btn")
 const scissorBtn = document.querySelector("#scissor-btn")
 const btns = document.querySelectorAll(".buttons")
+const newGameBtn = document.querySelector("#restart-game")
+const rulesBtn = document.querySelector("#rules")
 
 paperBtn.addEventListener("click", function(){
     const randomScore = scores[Math.floor(Math.random() * scores.length)]
@@ -58,6 +60,13 @@ rockBtn.addEventListener("click", function(){
         count++;
         scoreGame.innerText = `Your Score: ${count}`
     }
+})
+
+newGameBtn.addEventListener("click", function(){
+    scoreGame.innerText = "Your score: 0"
+    playerChoice.innerText = "Your choice: Rock"
+    cpuChoice.innerText = "Computer's choice: Paper"
+    result.innerText = "Winner: Computer"
 })
 
 
