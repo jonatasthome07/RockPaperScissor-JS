@@ -18,6 +18,8 @@ paperBtn.addEventListener("click", function(){
     }
     if (randomScore == scores.at(1)){
         result.innerText = "You win!"
+        count++;
+        scoreGame.innerText = `Your Score: ${count}`
     }
     if (randomScore == scores.at(2)){
         result.innerText = "You Lose!"
@@ -30,6 +32,8 @@ scissorBtn.addEventListener("click", function(){
     cpuChoice.innerText = `Computer's choice: ${randomScore}`
      if (randomScore == scores.at(0)){
         result.innerText = "You Win!"
+        count++;
+        scoreGame.innerText = `Your Score: ${count}`
     }
     if (randomScore == scores.at(1)){
         result.innerText = "You Lose!"
@@ -51,7 +55,10 @@ rockBtn.addEventListener("click", function(){
     }
     if (randomScore == scores.at(2)){
         result.innerText = "You win!"
+        count++;
+        scoreGame.innerText = `Your Score: ${count}`
     }
 })
+
 
 
