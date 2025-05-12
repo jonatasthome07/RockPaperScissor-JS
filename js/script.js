@@ -9,7 +9,8 @@ const paperBtn = document.querySelector("#paper-btn")
 const scissorBtn = document.querySelector("#scissor-btn")
 const btns = document.querySelectorAll(".buttons")
 const newGameBtn = document.querySelector("#restart-game")
-const rulesBtn = document.querySelector("#rules")
+const rulesBtn = document.querySelector(".rules")
+const showRules = document.querySelector(".rules-description")
 
 paperBtn.addEventListener("click", function(){
     const randomScore = scores[Math.floor(Math.random() * scores.length)]
@@ -60,6 +61,10 @@ rockBtn.addEventListener("click", function(){
         count++;
         scoreGame.innerText = `Your Score: ${count}`
     }
+})
+
+rulesBtn.addEventListener("click", function(){
+    showRules.classList.toggle("show-rules")
 })
 
 newGameBtn.addEventListener("click", function(){

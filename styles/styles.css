@@ -1,1 +1,7 @@
+.rules-description{
+    display: none;
+}
 
+.show-rules {
+    display: block;
+}
