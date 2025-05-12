@@ -20,6 +20,9 @@ newGameBtn.addEventListener("click", function(){
     playerChoice.innerText = "Your choice: Rock"
     cpuChoice.innerText = "Computer's choice: Paper"
     result.innerText = "Winner: Computer"
+    rockBtn.style.display = "inline"
+    paperBtn.style.display = "inline"
+    scissorBtn.style.display = "inline"
     playerCount = 0;
     cpuCount = 0;
 })
@@ -43,9 +46,11 @@ paperBtn.addEventListener("click", function(){
     }
     if (playerCount == 3){
         result.innerText = "You win the game!"
+        finishedGame();
     }
     if (cpuCount == 3){
         result.innerText = "You lose the game!"
+        finishedGame();
     }
 })
 
@@ -68,9 +73,11 @@ scissorBtn.addEventListener("click", function(){
     }
     if (playerCount == 3){
         result.innerText = "You win the game!"
+        finishedGame();
     }
     if (cpuCount == 3){
         result.innerText = "You lose the game!"
+        finishedGame();
     }
 })
 
