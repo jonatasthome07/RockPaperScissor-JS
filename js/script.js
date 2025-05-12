@@ -41,6 +41,12 @@ paperBtn.addEventListener("click", function(){
         cpuCount++;
         cpuPoints.innerText = `Computer's Score: ${cpuCount}`
     }
+    if (playerCount == 3){
+        result.innerText = "You win the game!"
+    }
+    if (cpuCount == 3){
+        result.innerText = "You lose the game!"
+    }
 })
 
 scissorBtn.addEventListener("click", function(){
@@ -59,6 +65,12 @@ scissorBtn.addEventListener("click", function(){
     }
     if (randomScore == scores.at(2)){
         result.innerText = "Draw Game!"
+    }
+    if (playerCount == 3){
+        result.innerText = "You win the game!"
+    }
+    if (cpuCount == 3){
+        result.innerText = "You lose the game!"
     }
 })
 
@@ -79,11 +91,25 @@ rockBtn.addEventListener("click", function(){
         playerCount++;
         scoreGame.innerText = `Your Score: ${playerCount}`
     }
+    if (playerCount == 3){
+        result.innerText = "You win the game!"
+        finishedGame();
+    }
+    if (cpuCount == 3){
+        result.innerText = "You lose the game!"
+        finishedGame();
+    }
 })
 
 rulesBtn.addEventListener("click", function(){
     showRules.classList.toggle("show-rules")
 })
+
+function finishedGame(){
+    rockBtn.style.display = "none"
+    paperBtn.style.display = "none"
+    scissorBtn.style.display = "none"
+}
 
 
 
