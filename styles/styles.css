@@ -14,10 +14,8 @@ body{
     margin-top: 150px;
 }
 
-#title{
+.title{
     text-align: center;
-    padding-top: 1rem;
-    color: rgb(133, 75, 75);
 }
 
 #score,
