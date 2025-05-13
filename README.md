@@ -1,1 +1,1 @@
-#Rock, paper and scissor using Vanilla JavaScript
+Rock, paper and scissor using Vanilla JavaScript
