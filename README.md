@@ -1,4 +1,4 @@
-# Rock, paper and scissor using Vanilla JS
+# Rock, paper and scissor - JavaScript
 
 ## What is rock, paper and scissor ?
 
