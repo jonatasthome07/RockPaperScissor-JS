@@ -13,3 +13,5 @@ This game is my first "big" project using what I learned in **HTML**, **CSS** an
 - Rock **wins** scissor
 - Paper **wins** Rock
 - Scissor **wins** paper
+
+**Deploy**: https://rock-paper-scissor-js-zeta.vercel.app/
