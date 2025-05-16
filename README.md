@@ -15,3 +15,8 @@ This game is my first "big" project using what I learned in **HTML**, **CSS** an
 - Scissor **wins** paper
 
 **Deploy**: https://rock-paper-scissor-js-zeta.vercel.app/
+
+#### Next steps ?
+
+- Aply React.JS (For now, the project is in Vanilla JS because I'm keep learn JS) 
+- Changing the layout, making more beautiful and atractive
